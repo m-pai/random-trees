@@ -8,7 +8,7 @@ using Catlab.CategoricalAlgebra
 
 # Generating random trees
 n = 5
-T = Graph(n)
+T = Graphs.Graph(n)
 
 function print_tree_edges(prufer, n)
     edgelist = Vector{Tuple{Int, Int}}()
