@@ -114,9 +114,10 @@ for i in 1:4
    r = collect(vertex_dict[p[2]])
    G_x = q[2]
    G_y = r[2]
-   hsx = homomorphism(G_x, G_e)
+   hsx = homomorphisms(G_x, G_e)
+   epis(g,h) = filter(is_epic,homomorphisms(G_x, G_e))
    if isempty(hsx) == false
-        hsy = homomorphism(G_y, G_e)
+        hsy = homomorphisms(G_y, G_e)
         if isempty(hsy) == false
             hx = hsx[1]
             hy = hsy[1]
