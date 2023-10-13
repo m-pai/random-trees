@@ -5,6 +5,7 @@ using GraphPlot
 using Catlab
 using Catlab.Graphs.BasicGraphs
 using Catlab.CategoricalAlgebra
+using DataFrames
 
 # Generating random trees
 n = 5
