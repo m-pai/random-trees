@@ -65,8 +65,8 @@ function generate_random_tree(n)
     arr = rand(1:n-1, n-2)
     println(arr)
     
-    print_tree_edges(arr,n)
+    edgelist = print_tree_edges(arr,n)
+    return edgelist
 end
 
-edgelist = generate_random_tree(n)
-println()
+println(generate_random_tree(5))
