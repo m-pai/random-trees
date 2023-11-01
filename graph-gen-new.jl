@@ -45,8 +45,10 @@ end
 
 function reflexive_conv(n)
     ref_graphs = []
-    for i in graphgen(n)
+    for i in graphs(n)
         push!(ref_graphs, Catlab.Graphs.BasicGraphs.ReflexiveGraph(i))
     end
     return unique(ref_graphs)
 end
+
+reflexive_conv(3)
