@@ -1,37 +1,31 @@
 using Catlab
 using Graphs 
-using Random
-using GraphPlot
 using Combinatorics
 
 
 function add_neighbour(g, s) 
-    add_vertex!(g)
+    Graphs.add_vertex!(g)
     for i in s 
-        add_edge!(g, i, nv(g))
+        Graphs.add_edge!(g, i, Graphs.nv(g))
     end
     return g
 end
 
 
 function vertex_subsets(g) 
-    sub = collect(powerset(1:Int(nv(g))))
+    sub = collect(Combinatorics.powerset(1:Int(Graphs.nv(g))))
     return sub
 end
 
 function grow(g)
-    set = []
-    for i in vertex_subsets(g)
-        k = g[1:nv(g)]
-            push!(set, add_neighbour(k, i))
-    end
+    set = map(s -> add_neighbour(g[1:Graphs.nv(g)],s), vertex_subsets(g))
     return set
 end
 
 function graphs(n)
     arr = []
     if n == 0
-        push!(arr, Graph(0))
+        push!(arr, Graphs.Graph(0))
         return arr
     else
         for i in graphs(n-1)
@@ -44,11 +38,6 @@ function graphs(n)
 end
 
 function reflexive_conv(n)
-    ref_graphs = []
-    for i in graphs(n)
-        push!(ref_graphs, Catlab.Graphs.BasicGraphs.ReflexiveGraph(i))
-    end
+    ref_graphs = map(i -> Catlab.Graphs.BasicGraphs.ReflexiveGraph(i), graphs(n))
     return unique(ref_graphs)
 end
-
-reflexive_conv(3)

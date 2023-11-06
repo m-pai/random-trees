@@ -2,13 +2,18 @@
 
 julia_version = "1.8.5"
 manifest_format = "2.0"
-project_hash = "222d2a8fb8ff363ec93b1d376c5046623c5ff7a7"
+project_hash = "ed32496da0ff9f623a45d44add8956b167c323bc"
 
 [[deps.AbstractAlgebra]]
 deps = ["GroupsCore", "InteractiveUtils", "LinearAlgebra", "MacroTools", "Preferences", "Random", "RandomExtensions", "SparseArrays", "Test"]
 git-tree-sha1 = "ce0cb2804273e9147a765501c719038247d7ccd9"
 uuid = "c3fe647b-3220-5bb0-a1ea-a7954cac585d"
 version = "0.33.0"
+
+[[deps.AlgebraicInterfaces]]
+git-tree-sha1 = "a81b76ea8d1801494562dd057315e4b7b25b8de1"
+uuid = "23cfdc9f-0504-424a-be1f-4892b28e2f0c"
+version = "0.1.1"
 
 [[deps.Antic_jll]]
 deps = ["Artifacts", "FLINT_jll", "GMP_jll", "JLLWrappers", "Libdl", "MPFR_jll", "Pkg"]
@@ -367,6 +372,12 @@ deps = ["Dates", "PrecompileTools", "UUIDs"]
 git-tree-sha1 = "716e24b21538abc91f6205fd1d8363f39b442851"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
 version = "2.7.2"
+
+[[deps.PartialFunctions]]
+deps = ["MacroTools"]
+git-tree-sha1 = "47b49a4dbc23b76682205c646252c0f9e1eb75af"
+uuid = "570af359-4316-4cb7-8c74-252c00c2016b"
+version = "1.2.0"
 
 [[deps.Pkg]]
 deps = ["Artifacts", "Dates", "Downloads", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Serialization", "TOML", "Tar", "UUIDs", "p7zip_jll"]
