@@ -39,5 +39,5 @@ end
 
 function reflexive_conv(n)
     ref_graphs = map(i -> Catlab.Graphs.BasicGraphs.ReflexiveGraph(i), graphs(n))
-    return unique(ref_graphs)
+    return ref_graphs
 end
