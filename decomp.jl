@@ -1,4 +1,3 @@
-
 function decompositions(tree_size, bag_size)
   decomp = []
 
@@ -8,12 +7,17 @@ function decompositions(tree_size, bag_size)
   # array of reflexive graphs of size n
   ngs = reflexive_conv(bag_size)
 
-  ngsn = hcat(ngs, ngs)
-
   all_epis = Any[]
 
-  # Error: size of ngs smaller than size of v+e and so not entering for loop
-  for gs in Combinatorics.combinations(ngsn, tree_size + tree_size - 1)
+  graph_assign = []
+
+  for i in range(1,2*tree_size-1)
+    k = rand(ngs)
+    push!(graph_assign, k)
+  end
+  print(graph_assign)
+
+  for gs in Combinatorics.multiset_permutations(graph_assign, tree_size + tree_size-1)
     el = elements(T)
     ob_dict = Dict(zip(ob_generators(∫(el)), gs))
     for f in hom_generators(∫(el))

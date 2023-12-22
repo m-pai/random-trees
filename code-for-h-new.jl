@@ -18,7 +18,3 @@ function h(lengths)
     A = collect(IterTools.Iterators.product(k...))
     return A
 end
-
-n = [1,2,3]
-
-h(n)
