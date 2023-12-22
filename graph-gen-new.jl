@@ -2,7 +2,6 @@ using Catlab
 using Graphs 
 using Combinatorics
 
-
 function add_neighbour(g, s) 
     Graphs.add_vertex!(g)
     for i in s 
