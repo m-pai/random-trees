@@ -18,7 +18,6 @@ function decompositions(tree_size, bag_size)
 
   num_tree_edges_vertices = 2 * tree_size - 1
   graph_assign = rand(ngs, num_tree_edges_vertices)
-  print(graph_assign)
 
   el = elements(T)
   ∫el = ∫(el)
@@ -26,7 +25,7 @@ function decompositions(tree_size, bag_size)
   hom_gen_el = hom_generators(∫el)
 
   for gs in Combinatorics.permutations(graph_assign, num_tree_edges_vertices)
-  # for gs in [[ngs[1], ngs[1], ngs[1], ngs[1], ngs[1]]]
+  #for gs in [[ngs[1], ngs[1], ngs[1], ngs[1], ngs[1]]]
     ob_dict = Dict(zip(ob_gen_el, gs))
     all_epis = Any[]
     for f in hom_gen_el
@@ -34,7 +33,6 @@ function decompositions(tree_size, bag_size)
     end
     if !isempty(all_epis)
       lengths = map(length, all_epis)
-      println(lengths)
       for i in h(lengths) 
         chosen_epis = map(l -> l[1][l[2]], zip(all_epis, i))
         mor_dict = Dict(zip(hom_gen_el, chosen_epis))

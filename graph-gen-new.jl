@@ -36,7 +36,18 @@ function graphs(n)
     end
 end
 
+function graphsupto(n)
+    arr = []
+    while n>-1
+        for j in graphs(n)
+            push!(arr, j)
+        end
+        n = n -1
+    end
+    return arr
+end
+
 function reflexive_conv(n)
-    ref_graphs = map(i -> Catlab.Graphs.BasicGraphs.ReflexiveGraph(i), graphs(n))
+    ref_graphs = map(i -> Catlab.Graphs.BasicGraphs.ReflexiveGraph(i), graphsupto(n))
     return ref_graphs
 end

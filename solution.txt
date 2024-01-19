@@ -1,0 +1,773 @@
+decompositons(2,2)
+2-element Vector{Any}:
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+
+
+#####################################################################################
+decompositions(2,3)
+  8-element Vector{Any}:
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([1, 2, 1], 3, 2), E = FinFunction([1, 2, 1, 1], 4, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}), 1 => ACSetTransformation((V = FinFunction([1, 3, 2], 3, 3), E = FinFunction([1, 3, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([2, 1, 2], 3, 2), E = FinFunction([2, 1, 2, 2], 4, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}), 1 => ACSetTransformation((V = FinFunction([1, 3, 2], 3, 3), E = FinFunction([1, 3, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([1, 1, 2], 3, 2), E = FinFunction([1, 1, 2, 1], 4, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}), 1 => ACSetTransformation((V = FinFunction([1, 3, 2], 3, 3), E = FinFunction([1, 3, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([2, 2, 1], 3, 2), E = FinFunction([2, 2, 1, 2], 4, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}), 1 => ACSetTransformation((V = FinFunction([1, 3, 2], 3, 3), E = FinFunction([1, 3, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([1, 3, 2], 3, 3), E = FinFunction([1, 3, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}), 1 => ACSetTransformation((V = FinFunction([1, 2, 1], 3, 2), E = FinFunction([1, 2, 1, 1], 4, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([1, 3, 2], 3, 3), E = FinFunction([1, 3, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}), 1 => ACSetTransformation((V = FinFunction([2, 1, 2], 3, 2), E = FinFunction([2, 1, 2, 2], 4, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([1, 3, 2], 3, 3), E = FinFunction([1, 3, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}), 1 => ACSetTransformation((V = FinFunction([1, 1, 2], 3, 2), E = FinFunction([1, 1, 2, 1], 4, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:2
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [2], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(2 => ACSetTransformation((V = FinFunction([1, 3, 2], 3, 3), E = FinFunction([1, 3, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}), 1 => ACSetTransformation((V = FinFunction([2, 2, 1], 3, 2), E = FinFunction([2, 2, 1, 2], 4, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 3, E = 2}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [3, 3]
+  tgt : E → V = [1, 2]))
+
+
+#####################################################################################
+decompositions(3,2)
+
+16-element Vector{Any}:
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [2, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2, 3], 3, 3)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}), 2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1], 2, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2], 2, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [1, 2, 2, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [2, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2, 3], 3, 3)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}), 2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1], 2, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([2, 1], 2, 2), E = FinFunction([2, 1], 2, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [1, 2, 2, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [2, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2, 3], 3, 3)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}), 2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1], 2, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2], 2, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [1, 2, 2, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [2, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2, 3], 3, 3)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}), 2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1], 2, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([2, 1], 2, 2), E = FinFunction([2, 1], 2, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [1, 2, 2, 3]))
+ ⋮
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [2, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([2, 1], 2, 2), E = FinFunction([2, 1], 2, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}), 2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1], 2, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2, 3], 3, 3)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [1, 2, 2, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [2, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2], 2, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}), 2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1], 2, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2, 3], 3, 3)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [1, 2, 2, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [2, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:2
+  src : E → V = [1, 2]
+  tgt : E → V = [1, 2]
+  refl : V → E = [1, 2], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:2
+  E = 1:3
+  src : E → V = [1, 2, 1]
+  tgt : E → V = [1, 2, 2]
+  refl : V → E = [1, 2]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([2, 1], 2, 2), E = FinFunction([2, 1], 2, 2)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}), 2 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1], 2, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 2}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1], 2, 1), E = FinFunction([1, 1, 1], 3, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2], 2, 2), E = FinFunction([1, 2, 3], 3, 3)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 2, E = 3})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [1, 2, 2, 3]))
+
+
+
+#####################################################################################
+decompositions(3,3)
+8-element Vector{Any}:
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [2, 1]
+  tgt : E → V = [1, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 2]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([3, 1, 2], 3, 3), E = FinFunction([3, 1, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}), 2 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1], 4, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1, 1, 1], 6, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2, 3], 3, 3), E = FinFunction([1, 2, 3, 4, 5, 6], 6, 6)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [2, 1, 1, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [2, 1]
+  tgt : E → V = [1, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 2]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([2, 3, 1], 3, 3), E = FinFunction([2, 3, 1, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}), 2 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1], 4, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1, 1, 1], 6, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2, 3], 3, 3), E = FinFunction([1, 2, 3, 4, 5, 6], 6, 6)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [2, 1, 1, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [2, 1]
+  tgt : E → V = [1, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 2]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([3, 1, 2], 3, 3), E = FinFunction([3, 1, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}), 2 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1], 4, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1, 1, 1], 6, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2, 3], 3, 3), E = FinFunction([1, 2, 3, 4, 5, 6], 6, 6)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [2, 1, 1, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [2, 1]
+  tgt : E → V = [1, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 2]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([2, 3, 1], 3, 3), E = FinFunction([2, 3, 1, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}), 2 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1], 4, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1, 1, 1], 6, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([1, 2, 3], 3, 3), E = FinFunction([1, 2, 3, 4, 5, 6], 6, 6)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [2, 1, 1, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [2, 1]
+  tgt : E → V = [1, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 2]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2, 3], 3, 3), E = FinFunction([1, 2, 3, 4, 5, 6], 6, 6)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}), 2 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1, 1, 1], 6, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1], 4, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([3, 1, 2], 3, 3), E = FinFunction([3, 1, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [2, 1, 1, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [2, 1]
+  tgt : E → V = [1, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 2]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2, 3], 3, 3), E = FinFunction([1, 2, 3, 4, 5, 6], 6, 6)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}), 2 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1, 1, 1], 6, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1], 4, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([3, 1, 2], 3, 3), E = FinFunction([3, 1, 2, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [2, 1, 1, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [2, 1]
+  tgt : E → V = [1, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 2]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2, 3], 3, 3), E = FinFunction([1, 2, 3, 4, 5, 6], 6, 6)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}), 2 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1, 1, 1], 6, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1], 4, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([2, 3, 1], 3, 3), E = FinFunction([2, 3, 1, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [2, 1, 1, 3]))
+ StrDecomp{Catlab.Graphs.BasicGraphs.Graph, Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, Catlab.CategoricalAlgebra.FinCats.FinDomFunctorMap{Catlab.CategoricalAlgebra.FinCats.FreeCatGraph{Catlab.Graphs.BasicGraphs.Graph}, TypeCat{Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}, Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}, Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}}}(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:3
+  E = 1:2
+  src : E → V = [2, 1]
+  tgt : E → V = [1, 3], FinDomFunctor(Dict{Int64, Catlab.Graphs.BasicGraphs.ReflexiveGraph}(5 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 4 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 1]
+  tgt : E → V = [1, 2, 3, 2]
+  refl : V → E = [1, 2, 3], 2 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:4
+  src : E → V = [1, 2, 3, 2]
+  tgt : E → V = [1, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 3 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:3
+  E = 1:6
+  src : E → V = [1, 2, 3, 1, 1, 2]
+  tgt : E → V = [1, 2, 3, 2, 3, 3]
+  refl : V → E = [1, 2, 3], 1 => Catlab.Graphs.BasicGraphs.ReflexiveGraph:
+  V = 1:1
+  E = 1:1
+  src : E → V = [1]
+  tgt : E → V = [1]
+  refl : V → E = [1]), Dict{Int64, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph}}(4 => ACSetTransformation((V = FinFunction([1, 2, 3], 3, 3), E = FinFunction([1, 2, 3, 4, 5, 6], 6, 6)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}), 2 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1, 1, 1], 6, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 6}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 3 => ACSetTransformation((V = FinFunction([1, 1, 1], 3, 1), E = FinFunction([1, 1, 1, 1], 4, 1)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 1, E = 1}), 1 => ACSetTransformation((V = FinFunction([2, 3, 1], 3, 3), E = FinFunction([2, 3, 1, 4], 4, 4)), Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4}, Catlab.Graphs.BasicGraphs.ReflexiveGraph {V = 3, E = 4})), FinCat(Catlab.Graphs.BasicGraphs.Graph {V = 5, E = 4}), TypeCat(Catlab.Graphs.BasicGraphs.ReflexiveGraph, CSetTransformation{TypeLevelBasicSchema{Symbol, Tuple{:V, :E}, Tuple{(:src, :E, :V), (:tgt, :E, :V), (:refl, :V, :E)}, Tuple{}, Tuple{}}, NamedTuple{(:V, :E), Tuple{Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}, Catlab.CategoricalAlgebra.FinSets.FinDomFunctionVector{Int64, Vector{Int64}, Catlab.CategoricalAlgebra.FinSets.FinSetInt}}}, Catlab.Graphs.BasicGraphs.ReflexiveGraph, Catlab.Graphs.BasicGraphs.ReflexiveGraph})), Decomposition, FinCat(Catlab.Graphs.BasicGraphs.Graph:
+  V = 1:5
+  E = 1:4
+  src : E → V = [4, 5, 4, 5]
+  tgt : E → V = [2, 1, 1, 3]))
+
+
+#####################################################################################
