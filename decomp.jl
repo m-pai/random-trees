@@ -1,5 +1,4 @@
 include("Decompositions.jl")
-using .Decompositions
 using Catlab.CategoricalAlgebra
 
 include("random-trees-new.jl")

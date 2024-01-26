@@ -48,6 +48,6 @@ function graphsupto(n)
 end
 
 function reflexive_conv(n)
-    ref_graphs = map(i -> Catlab.Graphs.BasicGraphs.ReflexiveGraph(i), graphsupto(n))
+    ref_graphs = map(i -> Catlab.Graphs.BasicGraphs.SymmetricReflexiveGraph(i), graphsupto(n))
     return ref_graphs
 end
